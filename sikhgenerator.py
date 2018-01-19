@@ -4,7 +4,7 @@ praenomen = ['raman', 'aman', 'kamal', 'jas', 'simran', 'gur', 'har', 'man', 'ba
         'nav', 'sukh', 'kul', 'prabh', 'gagan', 'mohan']
 cognomen = ['kaur', 'singh']
 caesar = ['bhai', 'gyani', 'sardar', 'sardarji', 'jarnail']
-tribus = ['ahluwalia', 'bhindranwale', 'saini', 'khatri', 'aurora', 'kamboj',
+tribus = ['ahluwalia', 'bhullar', 'bhindranwale', 'saini', 'khatri', 'aurora', 'kamboj',
         'ramdasia', 'chuhra', 'labana', 'kumhar', 'jatt', 'bhat', 'bahadur']
 
 def make_name():
