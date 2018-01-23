@@ -1,4 +1,4 @@
-nomen = ['preet', 'meet', 'jodh', 'winder', 'jeet', 'deep', 'noor', 'bir',
+nomen = ['preet', 'meet', 'jodh', 'windar', 'jeet', 'deep', 'noor', 'bir',
         'mohan']
 praenomen = ['raman', 'aman', 'kamal', 'jas', 'simran', 'gur', 'har', 'man', 'bal',
         'nav', 'sukh', 'kul', 'prabh', 'gagan', 'mohan']
