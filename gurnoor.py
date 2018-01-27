@@ -1,6 +1,6 @@
 import requests, time
 import sikhgenerator
-request = {'token' : '8dvD3RsRjQBYzYEMC9GveMg0MnQq0R5a7M4HMzAI'}
+request = {'token' : '[redacted]'}
 
 while True:
   response = requests.get('https://api.groupme.com/v3/groups/27409006/messages', params=request)
