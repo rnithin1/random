@@ -4,8 +4,11 @@
 # is m_l, and m_l's (k - i - 1)th preference is w_i. l := i + j (mod k),
 # i, j in [0, ..., k - 1]. Arbitrarily fill in preference remainder for
 # m_i, w_i. For n - k w, m let their first preference be each other.
+<<<<<<< HEAD
 MALE = 0
 FEMALE = 1
+=======
+>>>>>>> ea397d6a60cc4d3a9f9c53cb799a4752b0148b11
 
 import copy
 from itertools import permutations
@@ -22,6 +25,7 @@ gals = 0
 
 engage = []
 nengage = []
+<<<<<<< HEAD
 nnengage = []
 
 class BipartiteDigraph: #Male, female
@@ -52,6 +56,15 @@ def preference(val, person, pairing): #If passed a female, 4, and she is paired 
         return galprefers[person].index(pairing[MALE]) + 1
     else:
         return guyprefers[person].index(pairing[FEMALE]) + 1
+=======
+
+class Digraph:
+    self.nodes = set()
+    self.children = dict()
+    self.parents = dict()
+    self.edges = 0
+
+>>>>>>> ea397d6a60cc4d3a9f9c53cb799a4752b0148b11
 
 def assign_preferences():
     global galprefers, guyprefers
@@ -79,8 +92,12 @@ def assign_preferences():
         galprefers.update({i : [i] + sample(range(0, i), i) + sample(range(i + 1, n), n - i - 1)})
         guyprefers.update({i : [i] + sample(range(0, i), i) + sample(range(i + 1, n), n - i - 1)})
 
+<<<<<<< HEAD
     print(galprefers)
     print(guyprefers)
+=======
+    print(galprefers, guyprefers)
+>>>>>>> ea397d6a60cc4d3a9f9c53cb799a4752b0148b11
 
 def check(engaged):
     inverseengaged = dict((v,k) for k,v in engaged.items())
@@ -146,6 +163,7 @@ def make_matches():
         tempdict = dict(zip(range(n), i))
         engage.append(tempdict) if(check(tempdict)) else nengage.append(tempdict)
 
+<<<<<<< HEAD
     print(engage)
     for i in engage:
         lst = [(k, v) for k, v in i.items()]
@@ -156,11 +174,24 @@ def make_linear():
     for pairing in engage:
         2
  
+=======
+def make_linear():
+    for pairing in engage:
+        
+ 
+'''
+print('Engagement stability check PASSED' if check(engagedm) else 'Engagement stability check FAILED')
+'''
+>>>>>>> ea397d6a60cc4d3a9f9c53cb799a4752b0148b11
 assign_preferences()
 print('\nTMA engagements:')
 engaged = tma()
 print(engaged)
 print("hasdf")
 make_matches()
+<<<<<<< HEAD
 #bd = BipartiteDigraph()
 
+=======
+print(engage)
+>>>>>>> ea397d6a60cc4d3a9f9c53cb799a4752b0148b11
