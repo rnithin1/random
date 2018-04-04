@@ -21,6 +21,6 @@ def make_name():
   if first == second:
     first = praenomen[randint(0, len(praenomen) - 1)]
   naam = title + first + second + " " + name + " " + caste
-  return naam.title()
+  return naam.title().strip()
 
 make_name()
